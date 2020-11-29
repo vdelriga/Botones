@@ -44,7 +44,7 @@ public class MiListaButton: UIButton {
         }
     }
     
-    private func botonPulsado(){
+    public func animacion(){
         añadido = !añadido
         if(añadido){
             self.imageView?.animationImages = arrItems
@@ -64,9 +64,6 @@ public class MiListaButton: UIButton {
 
     }
     
-    @objc func animacion(){
-        self.botonPulsado()
-    }
     
     
     private func Inicio() {
