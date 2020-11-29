@@ -5,13 +5,14 @@ Este paquete define los botones "animados" para el proyecto de transformación.
 Instalación:
 
 Desde XCode: File->Swift Packages->Add PackageDependency
-Introducimos la url de este repositorio.
+Introducimos la url de este repositorio:
+https://github.com/vdelriga/Botones.git
 
 
 Ejemplo de uso:
 
 
-1.- Insertamos un botón en nuestro formulario(UIButton).
+1.- Insertamos un botón en nuestra vista(UIButton).
 
 2.- En el inspector de objetos actualizamos la Clase del botón a: MiListaButton del módulo: Botones.
 
