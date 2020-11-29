@@ -15,7 +15,7 @@ Ejemplo de uso:
 
 2.- En el inspector de objetos actualizamos la Clase del botón a: MiListaButton del módulo: Botones.
 
-En nuestro controlador de vista utilizamos como sigue:
+En nuestro ViewController utilizamos como sigue:
 
 3.- Definimos la variable:
     @IBOutlet weak var boton: MiListaButton!
