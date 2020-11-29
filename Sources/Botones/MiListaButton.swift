@@ -72,8 +72,8 @@ public class MiListaButton: UIButton {
         self.layer.borderColor = UIColor.white.cgColor
         
         for i in 0...20{
-            arrItems.append(UIImage(named:"boton_animado" + String(i) + ".png")!)
-            arrItems_reverse.append(UIImage(named:"boton_animado" + String(20-i) + ".png")!)
+            arrItems.append(UIImage(named:"boton_animado" + String(i) + ".png",in:Bundle.module,compatibleWith: nil)!)
+            arrItems_reverse.append(UIImage(named:"boton_animado" + String(20-i) + ".png",in:Bundle.module,compatibleWith: nil)!)
             
         }
     }
