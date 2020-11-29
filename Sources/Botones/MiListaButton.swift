@@ -38,9 +38,9 @@ public class MiListaButton: UIButton {
     public func estaEnLista(enMiLista:Bool){
         añadido=enMiLista
         if(!añadido){
-            self.setImage(UIImage(named:"boton_animado0.png"),for:.normal)
+            self.setImage(UIImage(named:"boton_animado0.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }else{
-            self.setImage(UIImage(named:"boton_animado20.png"),for:.normal)
+            self.setImage(UIImage(named:"boton_animado20.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }
     }
     
@@ -57,9 +57,9 @@ public class MiListaButton: UIButton {
 
            self.imageView?.startAnimating()
         if (añadido){
-            self.setImage(UIImage(named:"boton_animado20.png"),for:.normal)
+            self.setImage(UIImage(named:"boton_animado20.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }else{
-           self.setImage(UIImage(named:"boton_animado0.png"),for:.normal)
+            self.setImage(UIImage(named:"boton_animado0.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }
 
     }
