@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MiListaButton: UIButton {
+public class MiListaButton: UIButton {
     private var añadido:Bool = false
     private var arrItems_reverse:[UIImage] = []
     private var arrItems:[UIImage] = []
