@@ -38,9 +38,9 @@ public class MiListaButton: UIButton {
     public func estaEnLista(enMiLista:Bool){
         añadido=enMiLista
         if(!añadido){
-            self.setImage(UIImage(named:"boton_animado0.png"),for:.normal)
+            self.setImage(UIImage(named:"Botones/boton_animado0.png"),for:.normal)
         }else{
-            self.setImage(UIImage(named:"boton_animado20.png"),for:.normal)
+            self.setImage(UIImage(named:"Botones/boton_animado20.png"),for:.normal)
         }
     }
     
@@ -57,9 +57,9 @@ public class MiListaButton: UIButton {
 
            self.imageView?.startAnimating()
         if (añadido){
-            self.setImage(UIImage(named:"boton_animado20.png"),for:.normal)
+            self.setImage(UIImage(named:"Botones/boton_animado20.png"),for:.normal)
         }else{
-           self.setImage(UIImage(named:"boton_animado0.png"),for:.normal)
+           self.setImage(UIImage(named:"Botones/boton_animado0.png"),for:.normal)
         }
 
     }
@@ -72,8 +72,8 @@ public class MiListaButton: UIButton {
         self.layer.borderColor = UIColor.white.cgColor
         
         for i in 0...20{
-            arrItems.append(UIImage(named:"boton_animado" + String(i) + ".png")!)
-            arrItems_reverse.append(UIImage(named:"boton_animado" + String(20-i) + ".png")!)
+            arrItems.append(UIImage(named:"Botones/boton_animado" + String(i) + ".png")!)
+            arrItems_reverse.append(UIImage(named:"Botones/boton_animado" + String(20-i) + ".png")!)
             
         }
     }
