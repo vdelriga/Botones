@@ -57,9 +57,9 @@ public class MiListaButton: UIButton {
 
            self.imageView?.startAnimating()
         if (añadido){
-           self.setImage(UIImage(named:"Botones/boton_animado20.png"),for:.normal)
+            self.setImage(UIImage(named:"boton_animado20.png"),for:.normal)
         }else{
-           self.setImage(UIImage(named:"Botones/boton_animado0.png"),for:.normal)
+           self.setImage(UIImage(named:"boton_animado0.png"),for:.normal)
         }
 
     }
