@@ -2,7 +2,7 @@
 //  MiListaButton.swift
 //  MiListaButton
 //
-//  Created by LAURA MARTIN DOIMEADIOS TRUJILLO on 29/11/20.
+//  Created by VICTOR MANUEL DEL RIO GARCIA on 29/11/20.
 //
 
 import UIKit
@@ -70,6 +70,8 @@ public class MiListaButton: UIButton {
         self.layer.cornerRadius=4
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.white.cgColor
+        self.imageView?.contentMode = .scaleAspectFit
+        self.imageEdgeInsets = UIEdgeInsets(top: 20,left: 20,bottom: 20,right: 20)
         
         for i in 0...20{
             arrItems.append(UIImage(named:"Anima_boton_bis" + String(i) + ".png",in:Bundle.module,compatibleWith: nil)!)
