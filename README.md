@@ -14,7 +14,7 @@ Ejemplo de uso:
 
 1.- Insertamos un botón en nuestra vista(UIButton).
 
-2.- En el inspector de objetos actualizamos la Clase del botón a: MiListaButton del módulo: Botones.
+2.- En el inspector de objetos actualizamos la Clase del botón a por ejemplo: "MiListaButton" del módulo: Botones.
 
 En nuestro ViewController utilizamos como sigue:
 
