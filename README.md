@@ -1,6 +1,6 @@
 # Botones
 
-Este paquete define los botones "animados" para el proyecto de transformación. 
+Botones con diferentes animaciones
 
 Instalación:
 
