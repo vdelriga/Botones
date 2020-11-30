@@ -16,16 +16,18 @@ Ejemplo de uso:
 
 2.- En el inspector de objetos actualizamos la Clase del botón a por ejemplo: "MiListaButton" del módulo: Botones.
 
-En nuestro ViewController utilizamos como sigue:
+En nuestro ViewController importamos el módulo y utilizamos como sigue:
 
-3.- Definimos la variable:
+    import Botones
+
+3.- Definimos la variable botón:
     @IBOutlet weak var boton: MiListaButton!
     
 4.- En el método viewDidLoad de tu controlador de vista inicializamos el estado:
 
     boton.estaEnLista(enMiLista: false)
     
-5.- En el método que gestiona el evento de "boton pulsado" llamamos al método para que se muestre la animación:
+5.- En el método que gestiona el evento de "boton pulsado" invocamos al método que gestiona la animación:
     
     @IBAction func boton_pulsado(_ sender: MiListaButton) {
         sender.animacion()
