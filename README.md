@@ -21,6 +21,7 @@ En nuestro ViewController importamos el módulo y utilizamos como sigue:
     import Botones
 
 3.- Definimos la variable botón:
+
     @IBOutlet weak var boton: MiListaButton!
     
 4.- En el método viewDidLoad de tu controlador de vista inicializamos el estado:
