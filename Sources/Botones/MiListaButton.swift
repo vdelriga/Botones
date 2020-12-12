@@ -75,7 +75,7 @@ public class MiListaButton: UIButton {
         
         for i in 0...10{
             arrItems.append(UIImage(named:"Anima_netflix_" + String(i) + ".png",in:Bundle.module,compatibleWith: nil)!)
-            arrItems_reverse.append(UIImage(named:"Anima_netflix_" + String(20-i) + ".png",in:Bundle.module,compatibleWith: nil)!)
+            arrItems_reverse.append(UIImage(named:"Anima_netflix_" + String(10-i) + ".png",in:Bundle.module,compatibleWith: nil)!)
             
         }
     }
