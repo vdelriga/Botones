@@ -38,9 +38,9 @@ public class MiListaButton: UIButton {
     public func estaEnLista(enMiLista:Bool){
         añadido=enMiLista
         if(!añadido){
-            self.setImage(UIImage(named:"Anima_boton_bis0.png",in:Bundle.module,compatibleWith: nil),for:.normal)
+            self.setImage(UIImage(named:"Anima_netflix_0.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }else{
-            self.setImage(UIImage(named:"Anima_boton_bis20.png",in:Bundle.module,compatibleWith: nil),for:.normal)
+            self.setImage(UIImage(named:"Anima_netflix_10.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }
     }
     
@@ -57,9 +57,9 @@ public class MiListaButton: UIButton {
 
            self.imageView?.startAnimating()
         if (añadido){
-            self.setImage(UIImage(named:"Anima_boton_bis20.png",in:Bundle.module,compatibleWith: nil),for:.normal)
+            self.setImage(UIImage(named:"Anima_netflix_10.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }else{
-            self.setImage(UIImage(named:"Anima_boton_bis0.png",in:Bundle.module,compatibleWith: nil),for:.normal)
+            self.setImage(UIImage(named:"Anima_netflix_0.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }
 
     }
@@ -73,9 +73,9 @@ public class MiListaButton: UIButton {
         self.imageView?.contentMode = .scaleAspectFit
         self.imageEdgeInsets = UIEdgeInsets(top: 35,left: 5,bottom: 35,right: 35)
         
-        for i in 0...20{
-            arrItems.append(UIImage(named:"Anima_boton_bis" + String(i) + ".png",in:Bundle.module,compatibleWith: nil)!)
-            arrItems_reverse.append(UIImage(named:"Anima_boton_bis" + String(20-i) + ".png",in:Bundle.module,compatibleWith: nil)!)
+        for i in 0...10{
+            arrItems.append(UIImage(named:"Anima_netflix_" + String(i) + ".png",in:Bundle.module,compatibleWith: nil)!)
+            arrItems_reverse.append(UIImage(named:"Anima_netflix_" + String(20-i) + ".png",in:Bundle.module,compatibleWith: nil)!)
             
         }
     }
