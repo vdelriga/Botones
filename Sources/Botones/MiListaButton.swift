@@ -52,7 +52,7 @@ public class MiListaButton: UIButton {
         {
             self.imageView?.animationImages = arrItems_reverse
         }
-           self.imageView?.animationDuration = 1.0
+        self.imageView?.animationDuration = 0.7
            self.imageView?.animationRepeatCount=1
 
            self.imageView?.startAnimating()
