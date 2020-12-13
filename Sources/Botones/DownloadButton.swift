@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DownloadButton: UIButton {
+public class DownloadButton: UIButton {
 
     private var downloading:Bool = false
     private var downloaded:Bool = false
