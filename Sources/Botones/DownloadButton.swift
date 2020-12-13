@@ -25,7 +25,7 @@ public class DownloadButton: UIButton {
          self.Inicio()
     }
     
-    func set_progress(valor: CGFloat){
+    public func set_progress(valor: CGFloat){
         progress = valor
         progressLayer.strokeEnd = self.progress
         if( progress >= 1){
