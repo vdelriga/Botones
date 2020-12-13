@@ -30,7 +30,7 @@ public class DownloadButton: UIButton {
         progressLayer.strokeEnd = self.progress
         if( progress >= 1){
             downloaded = true
-            progress=0
+            self.set_progress(valor: 0)
             self.setImage(UIImage(named:"Anima_descargas14.png",in:Bundle.module,compatibleWith: nil),for:.normal)
         }
     }
