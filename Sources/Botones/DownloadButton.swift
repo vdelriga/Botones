@@ -88,7 +88,7 @@ public class DownloadButton: UIButton {
     
     private func  dibuja_barra_progreso(){
             bezierPath = UIBezierPath()
-        let marco=CGFloat(3.0)
+        let marco=CGFloat(2.0)
        /* bezierPath.move(to: CGPoint(x: self.bounds.midX,y: self.bounds.minY+marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.maxX-marco,y: self.bounds.minY+marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.maxX-marco,y: self.bounds.maxY-marco))
