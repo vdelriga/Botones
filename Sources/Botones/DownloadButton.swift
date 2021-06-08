@@ -89,12 +89,13 @@ public class DownloadButton: UIButton {
     private func  dibuja_barra_progreso(){
             bezierPath = UIBezierPath()
         let marco=CGFloat(5.0)
-        bezierPath.move(to: CGPoint(x: self.bounds.midX,y: self.bounds.minY+marco))
+       /* bezierPath.move(to: CGPoint(x: self.bounds.midX,y: self.bounds.minY+marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.maxX-marco,y: self.bounds.minY+marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.maxX-marco,y: self.bounds.maxY-marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.minX+marco,y: self.bounds.maxY-marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.minX+marco,y: self.bounds.minY+marco))
-        bezierPath.close()
+        bezierPath.close()*/
+        bezierPath.addArc(withCenter: center, radius: 20, startAngle: 0, endAngle: 2 * M_PI, clockwise: true)
         
         
         //        bezierPath = UIBezierPath(roundedRect: CGRect(x: self.bounds.minX + 3,y: self.bounds.minY + 3, width: self.bounds.width-6,height: self.bounds.height-6), cornerRadius: 4)
