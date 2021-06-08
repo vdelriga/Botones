@@ -95,7 +95,7 @@ public class DownloadButton: UIButton {
         bezierPath.addLine(to: CGPoint(x: self.bounds.minX+marco,y: self.bounds.maxY-marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.minX+marco,y: self.bounds.minY+marco))
         bezierPath.close()*/
-        bezierPath.addArc(withCenter: center, radius: 20, startAngle: 0, endAngle: 2 * M_PI, clockwise: true)
+        bezierPath.addArc(withCenter: center, radius: 20, startAngle: 0, endAngle: 2 * .pi, clockwise: true)
         
         
         //        bezierPath = UIBezierPath(roundedRect: CGRect(x: self.bounds.minX + 3,y: self.bounds.minY + 3, width: self.bounds.width-6,height: self.bounds.height-6), cornerRadius: 4)
