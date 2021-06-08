@@ -77,7 +77,7 @@ public class DownloadButton: UIButton {
        progressLayer = CAShapeLayer()
        progressLayer.path = bezierPath.cgPath
        progressLayer.strokeColor = UIColor.orange.cgColor
-       progressLayer.lineWidth = 2
+        progressLayer.lineWidth = 2.5
         progressLayer.strokeStart=0.0
         progressLayer.strokeEnd = 0.0
        //progressLayer.zPosition = 1
