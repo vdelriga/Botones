@@ -70,8 +70,8 @@ public class MiListaButton: UIButton {
         self.layer.cornerRadius=4
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.white.cgColor
-        self.imageView?.contentMode = .scaleAspectFit
-       // self.imageEdgeInsets = UIEdgeInsets(top: 35,left: 5,bottom: 35,right: 35)
+        self.imageView?.contentMode = .scaleAspectFill
+        self.imageEdgeInsets = UIEdgeInsets(top: 35,left: 35,bottom: 35,right: 35)
         
         for i in 0...10{
             arrItems.append(UIImage(named:"Anima_netflix_" + String(i) + ".png",in:Bundle.module,compatibleWith: nil)!)
