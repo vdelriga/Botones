@@ -77,18 +77,27 @@ public class DownloadButton: UIButton {
        progressLayer = CAShapeLayer()
        progressLayer.path = bezierPath.cgPath
        progressLayer.strokeColor = UIColor.orange.cgColor
-        progressLayer.lineWidth = 2.5
-        progressLayer.strokeStart=0.0
-        progressLayer.strokeEnd = 0.0
-       //progressLayer.zPosition = 1
+       progressLayer.lineWidth = 2.5
+       progressLayer.strokeStart=0.0
+       progressLayer.strokeEnd = 0.0
        progressLayer.fillColor = nil
+        backgroundLayer = CAShapeLayer()
+        backgroundLayer.path = bezierPath.cgPath
+        backgroundLayer.strokeColor = UIColor.white.cgColor
+        backgroundLayer.lineJoin = CAShapeLayerLineJoin.miter
+        backgroundLayer.lineDashPhase = 3.0
+        backgroundLayer.lineWidth = 1.5
+        backgroundLayer.strokeStart=0.0
+        backgroundLayer.strokeEnd = 100
+        backgroundLayer.fillColor = nil
         
+        self.layer.addSublayer(backgroundLayer)
         self.layer.addSublayer(progressLayer)
     }
     
     private func  dibuja_barra_progreso(){
-            bezierPath = UIBezierPath()
-        let marco=CGFloat(1.5)
+        bezierPath = UIBezierPath()
+        bezierPath_back = UIBezierPath()
        /* bezierPath.move(to: CGPoint(x: self.bounds.midX,y: self.bounds.minY+marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.maxX-marco,y: self.bounds.minY+marco))
         bezierPath.addLine(to: CGPoint(x: self.bounds.maxX-marco,y: self.bounds.maxY-marco))
@@ -98,8 +107,9 @@ public class DownloadButton: UIButton {
         bezierPath.addArc(withCenter: CGPoint(x: self.bounds.midX,y: self.bounds.midY), radius: 15, startAngle: 3 * .pi / 2, endAngle: 4.72, clockwise: false)
         bezierPath.close()
         
+        bezierPath_back.addArc(withCenter: CGPoint(x: self.bounds.midX,y: self.bounds.midY), radius: 15, startAngle: 3 * .pi / 2, endAngle: 4.72, clockwise: false)
+        bezierPath_back.close()
         
-        //        bezierPath = UIBezierPath(roundedRect: CGRect(x: self.bounds.minX + 3,y: self.bounds.minY + 3, width: self.bounds.width-6,height: self.bounds.height-6), cornerRadius: 4)
 
     }
     
