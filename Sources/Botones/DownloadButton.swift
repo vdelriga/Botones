@@ -64,6 +64,7 @@ public class DownloadButton: UIButton {
         if(downloading){
             self.imageView?.animationImages = arrItems
             self.setImage(UIImage(named:"Anima_descargas13.png",in:Bundle.module,compatibleWith: nil),for:.normal)
+            self.backgroundLayer.strokeEnd = 100
         }else
         {
             self.imageView?.animationImages = arrItems_reverse
@@ -89,7 +90,7 @@ public class DownloadButton: UIButton {
         backgroundLayer.lineDashPhase = 3.0
         backgroundLayer.lineWidth = 1.5
         backgroundLayer.strokeStart=0.0
-        backgroundLayer.strokeEnd = 100
+        backgroundLayer.strokeEnd = 0
         backgroundLayer.fillColor = nil
         
         self.layer.addSublayer(backgroundLayer)
